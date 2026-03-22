@@ -5,10 +5,18 @@ export interface Project {
   stack: string[]
   demoUrl: string
   githubUrl?: string
-  mockupType: 'budget' | 'booking' | 'names' | 'poker'
+  mockupType: 'todo' | 'budget' | 'booking' | 'names' | 'poker'
 }
 
 export const projects: Project[] = [
+  {
+    id: 'todo',
+    name: 'Tâches en duo',
+    description: 'To-do list collaborative temps réel — assignation de tâches, catégories dynamiques, drag & drop, notifications email automatiques.',
+    stack: ['Next.js', 'Supabase', 'Tailwind', 'Framer Motion'],
+    demoUrl: 'https://family-todo-demo.vercel.app/',
+    mockupType: 'todo',
+  },
   {
     id: 'budget',
     name: 'Smart Budget',

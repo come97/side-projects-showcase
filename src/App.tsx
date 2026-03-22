@@ -4,8 +4,10 @@ import budgetImg from './assets/budget.png'
 import bookingImg from './assets/booking.png'
 import namesImg from './assets/names.png'
 import pokerImg from './assets/poker.png'
+import todoImg from './assets/todo.png'
 
 const images: Record<string, string> = {
+  todo: todoImg,
   budget: budgetImg,
   booking: bookingImg,
   names: namesImg,
