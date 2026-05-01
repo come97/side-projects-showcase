@@ -5,10 +5,26 @@ export interface Project {
   stack: string[]
   demoUrl: string
   githubUrl?: string
-  mockupType: 'todo' | 'budget' | 'booking' | 'names' | 'poker'
+  mockupType: 'todo' | 'budget' | 'booking' | 'names' | 'poker' | 'foodJournal' | 'ytSummarizer'
 }
 
 export const projects: Project[] = [
+  {
+    id: 'foodJournal',
+    name: 'Food journal',
+    description: 'PWA carnet alimentaire & symptômes — saisie repas en texte ou photo + IA Claude, log symptômes en 2 taps, mode offline avec sync queue, export ZIP pour analyse LLM.',
+    stack: ['React 19', 'Vite', 'Supabase', 'Anthropic', 'PWA'],
+    demoUrl: 'https://food-journal-drab.vercel.app/',
+    mockupType: 'foodJournal',
+  },
+  {
+    id: 'ytSummarizer',
+    name: 'YT Summarizer',
+    description: 'Colle une URL YouTube — Claude transcrit (Supadata), structure les idées clés, envoie le résumé par mail. Cron quotidien sur les chaînes suivies.',
+    stack: ['Next.js', 'Anthropic', 'Supabase', 'Supadata', 'Nodemailer'],
+    demoUrl: 'https://yt-summarizer-amber.vercel.app/',
+    mockupType: 'ytSummarizer',
+  },
   {
     id: 'todo',
     name: 'Tâches en duo',
