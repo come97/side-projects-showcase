@@ -5,10 +5,19 @@ export interface Project {
   stack: string[]
   demoUrl: string
   githubUrl?: string
-  mockupType: 'todo' | 'budget' | 'booking' | 'names' | 'poker' | 'foodJournal' | 'ytSummarizer'
+  mockupType: 'todo' | 'budget' | 'booking' | 'names' | 'poker' | 'foodJournal' | 'ytSummarizer' | 'pdfStudio'
 }
 
 export const projects: Project[] = [
+  {
+    id: 'pdfStudio',
+    name: 'PDF Studio',
+    description: 'Atelier PDF 100% navigateur — split, merge, édition (texte, whiteout, surligneur, signature). Aucun upload, aucun compte. DA éditoriale Fraunces + palette papier/encre/forêt.',
+    stack: ['React 19', 'Vite', 'pdf-lib', 'pdfjs-dist', 'Tailwind v4'],
+    demoUrl: 'https://pdf-studio-delta.vercel.app/',
+    githubUrl: 'https://github.com/come97/pdf-studio',
+    mockupType: 'pdfStudio',
+  },
   {
     id: 'foodJournal',
     name: 'Food journal',
