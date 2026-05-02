@@ -14,7 +14,7 @@ export const projects: Project[] = [
     name: 'Food journal',
     description: 'PWA carnet alimentaire & symptômes — saisie repas en texte ou photo + IA Claude, log symptômes en 2 taps, mode offline avec sync queue, export ZIP pour analyse LLM.',
     stack: ['React 19', 'Vite', 'Supabase', 'Anthropic', 'PWA'],
-    demoUrl: 'https://food-journal-drab.vercel.app/',
+    demoUrl: 'https://food-journal-demo.vercel.app/',
     mockupType: 'foodJournal',
   },
   {
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     name: 'YT Summarizer',
     description: 'Colle une URL YouTube — Claude transcrit (Supadata), structure les idées clés, envoie le résumé par mail. Cron quotidien sur les chaînes suivies.',
     stack: ['Next.js', 'Anthropic', 'Supabase', 'Supadata', 'Nodemailer'],
-    demoUrl: 'https://yt-summarizer-amber.vercel.app/',
+    demoUrl: 'https://yt-summarizer-demo.vercel.app/',
     mockupType: 'ytSummarizer',
   },
   {
