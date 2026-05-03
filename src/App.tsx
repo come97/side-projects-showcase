@@ -8,6 +8,7 @@ import todoImg from './assets/todo.png'
 import foodJournalImg from './assets/food-journal.png'
 import ytSummarizerImg from './assets/yt-summarizer.png'
 import pdfStudioImg from './assets/pdf-studio.png'
+import moleTrackerImg from './assets/moleTracker.png'
 
 const images: Record<string, string> = {
   todo: todoImg,
@@ -18,6 +19,7 @@ const images: Record<string, string> = {
   foodJournal: foodJournalImg,
   ytSummarizer: ytSummarizerImg,
   pdfStudio: pdfStudioImg,
+  moleTracker: moleTrackerImg,
 }
 
 const ArrowIcon = () => (

@@ -5,10 +5,19 @@ export interface Project {
   stack: string[]
   demoUrl: string
   githubUrl?: string
-  mockupType: 'todo' | 'budget' | 'booking' | 'names' | 'poker' | 'foodJournal' | 'ytSummarizer' | 'pdfStudio'
+  mockupType: 'todo' | 'budget' | 'booking' | 'names' | 'poker' | 'foodJournal' | 'ytSummarizer' | 'pdfStudio' | 'moleTracker'
 }
 
 export const projects: Project[] = [
+  {
+    id: 'moleTracker',
+    name: 'MoleTrack',
+    description: 'PWA mobile pour suivre des grains de beauté dans le temps — capture caméra, catégorisation par zone du corps, comparaison côte-à-côte. Chiffrement bout-en-bout par PIN, zero-knowledge côté serveur.',
+    stack: ['React 19', 'Vite', 'Supabase', 'WebCrypto', 'PWA'],
+    demoUrl: 'https://mole-tracker-bookingfamilys-projects.vercel.app/',
+    githubUrl: 'https://github.com/come97/mole-tracker',
+    mockupType: 'moleTracker',
+  },
   {
     id: 'pdfStudio',
     name: 'PDF Studio',
