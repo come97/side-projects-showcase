@@ -90,7 +90,22 @@ export default function App() {
                 Aujourd'hui chez NielsenIQ. Tous les projets ci-dessous sont
                 publics et utilisables.
               </p>
-              <div className="flex gap-5 text-[13px]">
+
+              {/* Outils du quotidien */}
+              <div className="space-y-2">
+                <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-rust">
+                  Pratique
+                </p>
+                <p className="font-mono text-[11px] text-ink-soft leading-relaxed">
+                  SQL <span className="text-ink-faint/50">·</span> dbt{' '}
+                  <span className="text-ink-faint/50">·</span> Python{' '}
+                  <span className="text-ink-faint/50">·</span> React{' '}
+                  <span className="text-ink-faint/50">·</span> Postgres{' '}
+                  <span className="text-ink-faint/50">·</span> Supabase
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-x-5 gap-y-2 text-[13px]">
                 <a
                   href="https://www.linkedin.com/in/come-lescure/"
                   target="_blank"
@@ -100,7 +115,15 @@ export default function App() {
                   LinkedIn <ArrowIcon className="ml-0.5 -mt-px" />
                 </a>
                 <a
-                  href="mailto:come.lescure@gmail.com"
+                  href="https://github.com/come97"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono uppercase tracking-[0.2em] text-[11px] link-underline text-ink hover:text-rust transition-colors"
+                >
+                  GitHub <ArrowIcon className="ml-0.5 -mt-px" />
+                </a>
+                <a
+                  href="mailto:comelescure@gmail.com"
                   className="font-mono uppercase tracking-[0.2em] text-[11px] link-underline text-ink hover:text-rust transition-colors"
                 >
                   Email <ArrowIcon className="ml-0.5 -mt-px" />
@@ -139,6 +162,74 @@ export default function App() {
                 featured={i === 0}
               />
             ))}
+
+            {/* ── Tuile Contact ─ Le 10e projet ─ */}
+            <article className="group relative">
+              <div className="flex items-baseline justify-between mb-3">
+                <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-forest">
+                  ✉ &nbsp; Contact
+                </span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-forest border border-forest/60 px-2 py-[2px] rounded-sm">
+                  Disponible
+                </span>
+              </div>
+
+              <div
+                className="relative aspect-[3/2] overflow-hidden rounded-[3px] border border-forest/30 flex items-center justify-center px-6"
+                style={{
+                  background:
+                    'linear-gradient(135deg, color-mix(in oklab, var(--color-forest) 8%, transparent), color-mix(in oklab, var(--color-rust) 5%, transparent))',
+                }}
+              >
+                <p className="font-serif italic font-light text-[clamp(48px,7vw,72px)] leading-none tracking-tight text-forest text-center">
+                  Discutons<span className="text-rust">.</span>
+                </p>
+                <div className="absolute inset-0 ring-1 ring-inset ring-forest/10 pointer-events-none rounded-[3px]" />
+              </div>
+
+              <div className="mt-5 flex items-baseline justify-between gap-3">
+                <h3 className="font-serif text-[26px] leading-tight tracking-tight text-ink">
+                  Le 10<sup className="italic font-light text-[16px] -top-1">e</sup>{' '}
+                  projet
+                </h3>
+              </div>
+
+              <p className="mt-2 text-[13.5px] leading-relaxed text-ink-soft">
+                C'est peut-être avec toi. Une mission analytics, un pipeline à
+                clarifier, un side-project à co-construire — écris-moi, je
+                réponds vite.
+              </p>
+
+              <div className="mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[11px] font-mono text-ink-faint">
+                <span>SQL</span>
+                <span aria-hidden className="text-ink-faint/50">·</span>
+                <span>dbt</span>
+                <span aria-hidden className="text-ink-faint/50">·</span>
+                <span>Python</span>
+                <span aria-hidden className="text-ink-faint/50">·</span>
+                <span>BigQuery</span>
+                <span aria-hidden className="text-ink-faint/50">·</span>
+                <span>React</span>
+              </div>
+
+              <div className="mt-4 pt-3 border-t border-ink/10 flex justify-between items-center">
+                <a
+                  href="mailto:comelescure@gmail.com"
+                  className="font-mono text-[11px] uppercase tracking-[0.2em] text-forest hover:text-rust transition-colors"
+                >
+                  comelescure@gmail.com{' '}
+                  <ArrowIcon className="ml-0.5 -mt-px" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/come-lescure/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-faint hover:text-ink transition-colors"
+                >
+                  LinkedIn <ArrowIcon className="ml-0.5 -mt-px" />
+                </a>
+              </div>
+            </article>
           </div>
         </section>
 
